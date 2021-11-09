@@ -1,0 +1,66 @@
+{% include 'base.html' %}
+{% include 'navigation.html' %}
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static '/style.css' %}">
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Some text about who we are and what we do.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+<br>
+<h2 style="text-align:center">Our Team</h2>
+<div class="row text-center">
+  <div class="column">
+    <div class="card">
+      <img style="align:center" src="{% static "images/1.jpg" %}" alt="Doremon!" style="width:5px">
+      <div class="container">
+        <h2 style="text-align:center">Gaurav Kumawat</h2>
+        <p style="text-align:center" class="title">Programmer and Developer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p style="text-align:center">gaurav@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+  <img style="align:center" src="{% static "images/2.png" %}" alt="Nobita" style="width:5px">
+      <div class="container">
+        <h2 style="text-align:center">Aditiya Kumar Rai</h2>
+        <p style="text-align:center" class="title">Branch Changer and Programmer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p style="text-align:center">aditiya@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <img style="align:center" src="{% static "images/3.jpeg" %}" alt="Shi-zuka" style="width:5px">
+      <div class="container">
+        <h2 style="text-align:center">Stack-Overflow</h2>
+        <p style="text-align:center" class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p style="text-align:center">shizuka@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<footer class="bg-dark text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="color:white">
+    © 2020 Copyright:
+    <a style="color:white; " class="" href="#">Liv-Lyf</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+</html>
